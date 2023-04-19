@@ -3,7 +3,7 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-#principal{
+main{
     width: 90%;
     height: 1000px;
     margin: auto;
@@ -22,6 +22,7 @@ h1{
     border-radius: 10px;
     font-size: 25px;
     font-weight: 800;
+    border: 1px solid rgb(113, 182, 243);
 }
 #kanban{
     width: 95%;
@@ -31,27 +32,39 @@ h1{
 }
 .column{
     width: 300px;
-    height: 500px;
+    height: fit-content;
     background-color: rgba(255, 255, 255, 0.503);
     margin: 20px 9px 0px 9px;
     border-radius: 10px;
     float: left;
 }
 h2{
-    padding: 20px 0px 20px 10px;
+    padding: 20px 0px 20px 12px;
     font-size: 22px;
 }
 .card{
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 85%;
     line-height: 40px;
-    height: 150px;
+    height: fit-content;
+    padding-bottom: 60px;
     margin-bottom: 10px;
     border-radius: 10px;
     padding-left: 20px;
     padding-top: 30px;
+}
+.card:hover{
+    background-color: rgba(113, 182, 243, 0.672);
+    cursor: pointer;
+    color: white;
+}
+.card:hover .tag{
+    color: rgb(113, 182, 243);
+}
+.card:hover .equis{
+    background-color: black;
 }
 
 .tag{
@@ -59,6 +72,9 @@ h2{
     border-radius: 50%;
     width: fit-content;
     float: left;
+    margin-top: 15px;
+    margin-right: 5px;
+    line-height: 30px;
 }
 .front{
     background-color: rgb(27, 177, 27);
@@ -66,10 +82,20 @@ h2{
 }
 .back{
     background-color: orange;
-    padding: 0px 10px;
+    padding: 0px 8px;
     
 }
 .device{
-    background-color: yellow;
+    background-color: rgb(237, 237, 0);
     padding: 0px 10px;
+}
+.equis{
+    background-color: red;
+    width: fit-content;
+    padding: 0px 5px;
+    border-radius: 50%;
+    margin-top: -25px;
+    margin-left: 230px;
+    font-size: 12px;
+    line-height: 20px;
 }
